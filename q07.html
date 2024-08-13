@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <h1>Criar um código que copie o conteúdo de uma caixa de texto para outra só que em caixa alta.</h1>
+    </head>
+    <body>
+        <h2>Texto:</h2>
+        <input type="text" id="userText"></input>
+        <br>
+        <button id="button">Copiar</button>
+        <h2>Texto copiado:</h2>
+        <input type="text" id="userText2"></input>
+        <style>
+            body {
+                text-align: center;
+            }
+          </style>
+        <script>
+            document.getElementById("button").onclick = function () {
+                document.getElementById("userText2").value = document.getElementById("userText").value.toUpperCase();
+            };
+        </script>
+    </body>
+</html>

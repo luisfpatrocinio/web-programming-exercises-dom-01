@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 08</title>
+    <h1 id="header">ALTO CONTRASTE: DESATIVADO</h1>
+    <button id="button">Alto contraste</button>
+    <button id="reset">Resetar</button>
+    <style>
+      body {
+        text-align: center;
+        color: black;
+      }
+    </style>
+    <script>
+      document.getElementById("button").onclick = function () {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.getElementById("header").textContent =
+          "ALTO CONTRASTE: ATIVADO";
+      };
+      document.getElementById("reset").onclick = function () {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        document.getElementById("header").textContent =
+          "ALTO CONTRASTE: DESATIVADO";
+      };
+    </script>
+  </head>
+</html>

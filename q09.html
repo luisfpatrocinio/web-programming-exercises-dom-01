@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 09</title>
+    <h1>Aumentar tamanho de toda a página por botões.</h1>
+    <button id="buttonPlus">Aumentar</button>
+    <button id="buttonMinus">Diminuir</button>
+    <button id="reset">Resetar</button>
+    <style>
+      body {
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+    <script>
+      // Get button references
+      const buttonPlus = document.getElementById("buttonPlus");
+      const buttonMinus = document.getElementById("buttonMinus");
+      const reset = document.getElementById("reset");
+
+      // Get body reference
+      const body = document.body;
+
+      // Get initial font size
+      let fontSize = 16;
+
+      // Increase font size
+      buttonPlus.onclick = function () {
+        fontSize += 2;
+        body.style.fontSize = fontSize + "px";
+      };
+
+      // Decrease font size
+      buttonMinus.onclick = function () {
+        fontSize -= 2;
+        body.style.fontSize = fontSize + "px";
+      };
+
+      // Reset font size
+      reset.onclick = function () {
+        fontSize = 16;
+        body.style.fontSize = fontSize + "px";
+      };
+    </script>
+  </head>
+</html>

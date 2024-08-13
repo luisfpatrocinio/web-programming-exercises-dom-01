@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 11 e 12</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        margin: 20px;
+      }
+      #Lista,
+      #buttons {
+        width: 45%;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+      h1 {
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="Lista">
+        <h1>Lista de Elementos</h1>
+        <ul id="list"></ul>
+        <select id="selectList"></select>
+      </div>
+      <div id="buttons">
+        <input type="text" id="userText" /> <br />
+        <button id="button">Adicionar à Lista</button> <br />
+        <button id="button2">Remover da Lista</button> <br />
+        <button id="button3">Adicionar ao Select</button> <br />
+        <button id="button4">Remover do Select</button>
+      </div>
+    </main>
+    <footer>
+      <p>Desenvolvido por Luis Felipe Patrocinio</p>
+      <p>
+        Referências:
+        <a
+          href="https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild"
+          target="_blank"
+          >https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild</a
+        >
+      </p>
+    </footer>
+    <script>
+      // Adicionar à lista não ordenada
+      document.getElementById("button").onclick = function () {
+        const list = document.getElementById("list");
+        const userText = document.getElementById("userText").value;
+        if (userText.trim() !== "") {
+          const newItem = document.createElement("li");
+          newItem.textContent = userText;
+          list.appendChild(newItem);
+        }
+      };
+
+      // Remover o último item da lista não ordenada
+      document.getElementById("button2").onclick = function () {
+        const list = document.getElementById("list");
+        list.removeChild(list.lastElementChild);
+      };
+
+      // Adicionar ao select
+      document.getElementById("button3").onclick = function () {
+        const selectList = document.getElementById("selectList");
+        const userText = document.getElementById("userText").value;
+        if (userText.trim() !== "") {
+          const newOption = document.createElement("option");
+          newOption.textContent = userText;
+          selectList.appendChild(newOption);
+        }
+      };
+
+      // Remover o último item do select
+      document.getElementById("button4").onclick = function () {
+        const selectList = document.getElementById("selectList");
+        selectList.removeChild(selectList.lastElementChild);
+      };
+    </script>
+  </body>
+</html>

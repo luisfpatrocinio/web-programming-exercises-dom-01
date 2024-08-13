@@ -1,0 +1,5 @@
+DOM é a abreviação de Document Object Model, que significa a representação dos objetos que compõem a estrutura e o conteúdo de um documento na Web.
+De maneira mais específica, o DOM é a uma interface de programação para os documentos HTML e XML. Representa a página de forma que os programas possam alterar a estrutura do documento, alterar o estilo e conteúdo.
+A representação do DOM é feita por meio de nós e objetos, permitindo assim que as linguagens se conectem à página.
+Uma página da Wweb é um documento. O DOM representa esse mesmo documento, mas de maneira orientada a objeto, podendo ser acessado e modificado por linguagens de script como JavaScript.
+

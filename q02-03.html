@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questão 02 - DOM - Casos de uso de getElements</title>
+    <link rel="stylesheet" href="q02-03.css"> <!-- Vinculando o CSS -->
+    <script src="q02-03.js"></script>
+</head>
+<body>
+    <div id="letraA">
+        <h1>Caso de uso de document.getElementById():</h1>
+        <p>Insira seu nome: </p>
+        <form><input type="text" id="userNameInput"></form>
+        <p id="userNameText">Seu nome é:</p>
+        <p>Pressione o botão para colorir o seu nome.</p>
+        <button id="colorButton">Colorir</button>
+    </div>
+    
+    <div id ="letraB">
+        <h1>Caso de uso de document.getElementByTagName():</h1>
+        <h1>Lista de Disciplinas</h1>
+        <ul>
+            <li>Programação para Internet</li>
+            <li>Estrutura de Dados II</li>
+            <li>Planejamento Extensionista</li>
+            <li>Redes de Computadores</li>
+            <li>Inteligência Artificial</li>
+            <li>Banco de Dados II</li>
+            <li>Engenharia de Software II</li>
+            <li>Atividades Linguísticas</li>
+        </ul>
+
+        <p>Botão para destacar tarefas:</p>
+        <button id="highlightButton">Destacar</button>
+    </div>
+
+    <!-- Barra de divisão para a terceira questão: -->
+    <!-- Crie um código que conte o número de parágrafos dentro de uma div e exiba o
+resultado em uma outra div.-->
+    <div id="terceiraQuestao">
+        <h1>Caso de uso de document.getElementByClassName():</h1>
+        <div id="paragrafos">
+            <p>Parágrafo 1</p>
+            <p>Parágrafo 2</p>
+            <p>Parágrafo 3</p>
+            <p>Parágrafo 4</p>
+            <p>Parágrafo 5</p>
+        </div>
+        <p>Pressione o botão para contar o número de parágrafos.</p>
+        <button id="countButton">Contar</button>
+        <p id="countText">Número de parágrafos:</p>
+    </div>
+</body>
+</html>
