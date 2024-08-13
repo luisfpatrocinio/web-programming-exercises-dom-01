@@ -1,5 +1,0 @@
-innerText -> Retorna somente o texto, sem formatações ou elementos html.
-innerHtml -> Retorna o texto, COM formatações e COM elementos html.
-textContent -> Retorna o text COM formatações, mas sem os elementos html.
-
-A principal diferença entre textContent e innerHTML é que textContent retorna ou define apenas o texto de um elemento, sem interpretar ou processar tags HTML, enquanto innerHTML retorna ou define o conteúdo HTML completo, permitindo que tags HTML sejam processadas e renderizadas. textContent é seguro contra injeção de HTML, pois trata o conteúdo como texto puro, enquanto innerHTML pode ser usado para inserir ou modificar HTML, mas deve ser usado com cautela para evitar problemas de segurança, como injeção de código malicioso.
